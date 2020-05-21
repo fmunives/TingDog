@@ -3,46 +3,111 @@
   <head>
     <meta charset="utf-8" />
     <title>TinDog</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ac6fc4de9c.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <section id="title">
+    <section id="title" class="container-fluid">
       <!-- Nav Bar -->
-
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">TinDog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Contact <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <!-- Title -->
 
-      <div>
-        <h1>Meet new and interesting dogs nearby.</h1>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
-      </div>
-      <div>
-        <img src="images/iphone6.png" alt="iphone-mockup" />
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="title text-white mb-5">
+            Meet new and interesting dogs nearby.
+          </h1>
+          <button class="btn btn-dark btn-lg mr-3" type="button">
+            <i class="fab fa-apple"></i> Download
+          </button>
+          <button class="btn btn-outline-light btn-lg" type="button">
+            <i class="fab fa-google-play"></i> Download
+          </button>
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="title-image"
+            src="images/iphone6.png"
+            alt="iphone-mockup"
+          />
+        </div>
       </div>
     </section>
 
     <!-- Features -->
 
     <section id="features">
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
-
-      <h3>Elite Clientele</h3>
-      <p>We have all the dogs, the greatest dogs.</p>
-
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <i class="fas fa-check-circle fa-4x icon-feature"></i>
+          <h3 class="title-feature">
+            Easy to use.
+          </h3>
+          <p class="description-feature">
+            So easy to use, even your dog could do it.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fas fa-bullseye fa-4x icon-feature"></i>
+          <h3 class="title-feature">
+            Elite Clientele
+          </h3>
+          <p class="description-feature">
+            We have all the dogs, the greatest dogs.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fas fa-heart fa-4x icon-feature"></i>
+          <h3 class="title-feature">
+            Guaranteed to work.
+          </h3>
+          <p class="description-feature">
+            Find the love of your dog's life or your money back.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->

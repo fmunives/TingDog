@@ -1,0 +1,60 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#title {
+  background-color: #ff4c68;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  line-height: 1.5;
+  /* color: #fff; */
+}
+
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+}
+
+.title-feature {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description-feature {
+  color: #8f8f8f;
+}
+
+.icon-feature {
+  color: #ef8172;
+  padding: 2.5em 0 0.3em;
+  transition: color 0.2s ease;
+}
+
+.icon-feature:hover {
+  color: #ff4c68;
+}
+
+/* bootstrap  */
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
