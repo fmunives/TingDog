@@ -31,12 +31,48 @@ body {
 
 .icon-feature {
   color: #ef8172;
-  padding: 2.5em 0 0.3em;
+  padding-bottom: 0.3em;
   transition: color 0.2s ease;
+}
+
+.features-cards div:first-child {
+  padding: 4em 0 2em 0;
+}
+
+.features-cards div:nth-child(2) {
+  padding: 2em 0 2em 0;
+}
+.features-cards div:last-child {
+  padding: 2em 0 4em 0;
 }
 
 .icon-feature:hover {
   color: #ff4c68;
+}
+
+#testimonials {
+  background-color: #ef8172;
+  padding: 3em 0;
+}
+
+.testimonial-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.testimonial-img {
+  width: 15%;
+  border-radius: 100%;
+  margin: 1em 1em 0 0;
+}
+
+.press {
+  padding: 2em;
+}
+
+.press img {
+  width: 20%;
+  padding: 1em;
 }
 
 /* bootstrap  */
@@ -57,4 +93,23 @@ body {
 
 .nav-item {
   padding: 0 18px;
+}
+
+@media (min-width: 768px) {
+  .testimonial-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .features-cards div:first-child {
+    padding: 4em 0 4em 0;
+  }
+
+  .features-cards div:nth-child(2) {
+    padding: 4em 0 4em 0;
+  }
+  .features-cards div:last-child {
+    padding: 4em 0 4em 0;
+  }
 }
