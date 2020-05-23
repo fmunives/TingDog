@@ -3,69 +3,67 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-#title {
-  background-color: #ff4c68;
+p {
+  color: #8f8f8f;
 }
 
-.title {
-  font-family: "Montserrat", sans-serif;
+/* general classes */
+
+.title-heading {
   font-size: 2.5rem;
   font-weight: bolder;
   line-height: 1.5;
-  /* color: #fff; */
 }
+
+.subtitle-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* title section */
 
 .title-image {
   width: 60%;
 }
 
-.title-feature {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.description-feature {
-  color: #8f8f8f;
-}
-
-.icon-feature {
-  color: #ef8172;
-  padding-bottom: 0.3em;
-  transition: color 0.2s ease;
-}
-
-.title-landing {
-  padding-bottom: 4em;
-}
+/* features section */
 
 #features {
-  background-color: #fff;
   position: relative;
 }
 
-.features-cards div:first-child {
-  padding: 4em 0 2em 0;
+.features-cards {
+  padding: 6em;
 }
 
-.features-cards div:nth-child(2) {
-  padding: 2em 0 2em 0;
-}
-.features-cards div:last-child {
-  padding: 2em 0 4em 0;
+.features-cards > div {
+  padding: 2em;
 }
 
-.icon-feature:hover {
+.features-icon {
+  transition: color 0.2s ease;
+}
+
+.features-icon:hover {
   color: #ff4c68;
 }
 
-#testimonials {
-  background-color: #ef8172;
-  padding: 3em 0;
+/* cta section */
+
+#cta {
+  padding: 7em 0;
+  margin-top: 3em;
 }
 
-.testimonial-title {
-  font-size: 1.5rem;
-  font-weight: bolder;
+/* footer section */
+
+#footer {
+  padding: 4em 0;
+}
+
+.footer-icons a {
+  padding: 0.5em;
+  color: #222;
 }
 
 .testimonial-img {
@@ -74,11 +72,9 @@ body {
   margin: 1em 1em 0 0;
 }
 
-.press {
-  padding: 2em;
-}
+/* press section */
 
-.press img {
+.press-img {
   width: 40%;
   padding: 1em;
 }
@@ -103,67 +99,40 @@ body {
   padding: 0 18px;
 }
 
-#cta {
-  background-color: #ff4c68;
-  padding: 7em 0;
-  margin-top: 3em;
+.bg-primary {
+  background-color: #ff4c68 !important;
 }
 
-.cta-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+.bg-secondary {
+  background-color: #ef8172 !important;
 }
 
-#footer {
-  padding: 4em 0;
+.color-primary {
+  color: #ff4c68;
 }
 
-#footer p {
-  font-size: 0.8rem;
-  color: #8f8f8f;
-  font-weight: normal;
-  margin-bottom: 0;
-  margin-top: 0.5em;
-}
-
-.footer-icons a {
-  padding: 0.5em;
-  color: #222;
+.color-secondary {
+  color: #ef8172;
 }
 
 @media (min-width: 768px) {
-  .testimonial-title {
+  .title-heading {
     font-size: 3rem;
   }
 
-  .title {
-    font-size: 3.5rem;
-  }
-
-  .press img {
+  .press-img {
     width: 20%;
   }
 }
 
 @media (min-width: 992px) {
+  .title-heading {
+    font-size: 3.5rem;
+  }
+
   .title-image {
     transform: rotate(25deg);
     position: absolute;
     left: 15%;
-  }
-
-  .features-cards div:first-child {
-    padding: 5em 0 5em 0;
-  }
-
-  .features-cards div:nth-child(2) {
-    padding: 5em 0 5em 0;
-  }
-  .features-cards div:last-child {
-    padding: 5em 0 5em 0;
-  }
-
-  .cta-title {
-    font-size: 3.5rem;
   }
 }

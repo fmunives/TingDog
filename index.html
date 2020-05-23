@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <section id="title" class="container-fluid">
+    <section id="title" class="container-fluid bg-primary">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">TinDog</a>
@@ -39,15 +39,15 @@
         <div class="collapse navbar-collapse ml-auto" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#footer"
                 >Contact <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Download</a>
+              <a class="nav-link" href="#cta">Download</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@
 
       <div class="row title-landing text-center text-lg-left">
         <div class="col-lg-6">
-          <h1 class="title text-white mb-5">
+          <h1 class="title-heading text-white mb-5">
             Meet new and interesting dogs nearby.
           </h1>
           <button
@@ -81,32 +81,36 @@
 
     <!-- Features -->
 
-    <section id="features" class="container">
+    <section id="features" class="container bg-white">
       <div class="row text-center features-cards">
         <div class="col-lg-4">
-          <i class="fas fa-check-circle fa-4x icon-feature"></i>
-          <h3 class="title-feature">
+          <i
+            class="fas fa-check-circle fa-4x features-icon pb-3 color-secondary"
+          ></i>
+          <h3 class="subtitle-heading">
             Easy to use.
           </h3>
-          <p class="description-feature">
+          <p>
             So easy to use, even your dog could do it.
           </p>
         </div>
         <div class="col-lg-4">
-          <i class="fas fa-bullseye fa-4x icon-feature"></i>
-          <h3 class="title-feature">
+          <i
+            class="fas fa-bullseye fa-4x features-icon pb-3 color-secondary"
+          ></i>
+          <h3 class="subtitle-heading">
             Elite Clientele
           </h3>
-          <p class="description-feature">
+          <p>
             We have all the dogs, the greatest dogs.
           </p>
         </div>
         <div class="col-lg-4">
-          <i class="fas fa-heart fa-4x icon-feature"></i>
-          <h3 class="title-feature">
+          <i class="fas fa-heart fa-4x features-icon pb-3 color-secondary"></i>
+          <h3 class="subtitle-heading">
             Guaranteed to work.
           </h3>
-          <p class="description-feature">
+          <p>
             Find the love of your dog's life or your money back.
           </p>
         </div>
@@ -115,7 +119,7 @@
 
     <!-- Testimonials -->
 
-    <section id="testimonials">
+    <section id="testimonials" class="bg-secondary py-5">
       <div class="text-white">
         <div
           id="carouselExampleControls"
@@ -125,7 +129,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="text-center container">
-                <h2 class="testimonial-title">
+                <h2 class="title-heading">
                   I no longer have to sniff other dogs for love. I've found the
                   hottest Corgi on TinDog. Woof.
                 </h2>
@@ -139,7 +143,7 @@
             </div>
             <div class="carousel-item">
               <div class="text-center container">
-                <h2 class="testimonial-title">
+                <h2 class="title-heading">
                   My dog used to be so lonely, but with TinDog's help, they've
                   found the love of their life. I think.
                 </h2>
@@ -176,12 +180,16 @@
 
     <!-- Press -->
 
-    <section id="press">
-      <div class="container press text-center my-5">
-        <img src="images/TechCrunch.png" alt="tc-logo" />
-        <img src="images/tnw.png" alt="tnw-logo" />
-        <img src="images/bizinsider.png" alt="biz-insider-logo" />
-        <img src="images/mashable.png" alt="mashable-logo" />
+    <section id="press" class="p-5">
+      <div class="container text-center my-5">
+        <img class="press-img" src="images/TechCrunch.png" alt="tc-logo" />
+        <img class="press-img" src="images/tnw.png" alt="tnw-logo" />
+        <img
+          class="press-img"
+          src="images/bizinsider.png"
+          alt="biz-insider-logo"
+        />
+        <img class="press-img" src="images/mashable.png" alt="mashable-logo" />
       </div>
     </section>
 
@@ -189,12 +197,14 @@
 
     <section id="pricing" class="text-center container">
       <h2>A Plan for Every Dog's Needs</h2>
-      <p>Simple and affordable price plans for your and your dog.</p>
+      <p class="mb-5">
+        Simple and affordable price plans for your and your dog.
+      </p>
       <div class="row">
         <div class="col-lg-4">
           <div class="card">
             <div class="card-header">
-              <h3>Chihuahua</h3>
+              <h3 class="subtitle-heading">Chihuahua</h3>
             </div>
             <div class="card-body">
               <h2>Free</h2>
@@ -210,7 +220,7 @@
         <div class="col-lg-4">
           <div class="card">
             <div class="card-header">
-              <h3>Labrador</h3>
+              <h3 class="subtitle-heading">Labrador</h3>
             </div>
             <div class="card-body">
               <h2>$49 / mo</h2>
@@ -226,7 +236,7 @@
         <div class="col-lg-4">
           <div class="card">
             <div class="card-header">
-              <h3>Mastiff</h3>
+              <h3 class="subtitle-heading">Mastiff</h3>
             </div>
             <div class="card-body">
               <h2>$99 / mo</h2>
@@ -245,9 +255,9 @@
 
     <!-- Call to Action -->
 
-    <section id="cta">
+    <section id="cta" class="bg-primary">
       <div class="container text-center text-white">
-        <h3 class="cta-title mb-5">
+        <h3 class="title-heading mb-5">
           Find the True Love of Your Dog's Life Today.
         </h3>
         <button class="btn btn-dark btn-lg mr-md-3" type="button">
@@ -262,7 +272,7 @@
     <!-- Footer -->
 
     <footer id="footer" class="bg-white text-center">
-      <div class="footer-icons">
+      <div class="footer-icons mb-1">
         <a href=""><i class="fab fa-twitter"></i></a>
         <a href=""><i class="fab fa-facebook"></i></a>
         <a href=""><i class="fab fa-instagram"></i></a>
