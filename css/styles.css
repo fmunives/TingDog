@@ -1,6 +1,7 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -113,6 +114,14 @@ p {
 
 .color-secondary {
   color: #ef8172;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
